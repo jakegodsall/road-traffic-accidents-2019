@@ -1,0 +1,127 @@
+datetime,attendance,home_team_name,away_team_name,stadium_name,latitude,longitude,day_of_year,day_of_week
+2019-01-01 12:30:00,39052,Everton,Leicester City,Goodison Park,53.4387,-2.96619,1,3
+2019-01-13 14:15:00,38113,Everton,AFC Bournemouth,Goodison Park,53.4387,-2.96619,13,1
+2019-02-02 15:00:00,39380,Everton,Wolverhampton Wanderers,Goodison Park,53.4387,-2.96619,33,7
+2019-02-06 19:45:00,39322,Everton,Manchester City,Goodison Park,53.4387,-2.96619,37,4
+2019-03-03 16:15:00,39335,Everton,Liverpool,Goodison Park,53.4387,-2.96619,62,1
+2019-03-17 16:30:00,39356,Everton,Chelsea,Goodison Park,53.4387,-2.96619,76,1
+2019-04-07 13:05:00,39400,Everton,Arsenal,Goodison Park,53.4387,-2.96619,97,1
+2019-04-21 12:30:00,39395,Everton,Manchester United,Goodison Park,53.4387,-2.96619,111,1
+2019-05-03 19:00:00,39303,Everton,Burnley,Goodison Park,53.4387,-2.96619,123,6
+2019-01-01 15:00:00,59887,Arsenal,Fulham,Emirates,51.5549,-0.108436,1,3
+2019-01-19 17:30:00,59979,Arsenal,Chelsea,Emirates,51.5549,-0.108436,19,7
+2019-01-29 19:45:00,59933,Arsenal,Cardiff City,Emirates,51.5549,-0.108436,29,3
+2019-02-24 14:05:00,59877,Arsenal,Southampton,Emirates,51.5549,-0.108436,55,1
+2019-02-27 19:45:00,59618,Arsenal,AFC Bournemouth,Emirates,51.5549,-0.108436,58,4
+2019-03-10 16:30:00,60000,Arsenal,Manchester United,Emirates,51.5549,-0.108436,69,1
+2019-04-01 19:00:00,59869,Arsenal,Newcastle United,Emirates,51.5549,-0.108436,91,2
+2019-04-21 15:00:00,59929,Arsenal,Crystal Palace,Emirates,51.5549,-0.108436,111,1
+2019-05-05 15:30:00,59965,Arsenal,Brighton & Hove Albion,Emirates,51.5549,-0.108436,125,1
+2019-01-01 17:30:00,32485,Cardiff City,Tottenham Hotspur,Cardiff City,51.4729,-3.20413,1,3
+2019-01-12 15:00:00,30725,Cardiff City,Huddersfield Town,Cardiff City,51.4729,-3.20413,12,7
+2019-02-02 17:30:00,31939,Cardiff City,AFC Bournemouth,Cardiff City,51.4729,-3.20413,33,7
+2019-02-22 19:45:00,30387,Cardiff City,Watford,Cardiff City,51.4729,-3.20413,53,6
+2019-02-26 19:45:00,31849,Cardiff City,Everton,Cardiff City,51.4729,-3.20413,57,3
+2019-03-09 15:00:00,32458,Cardiff City,West Ham United,Cardiff City,51.4729,-3.20413,68,7
+2019-03-31 13:05:00,32657,Cardiff City,Chelsea,Cardiff City,51.4729,-3.20413,90,1
+2019-04-21 15:00:00,33082,Cardiff City,Liverpool,Cardiff City,51.4729,-3.20413,111,1
+2019-05-04 16:30:00,32133,Cardiff City,Crystal Palace,Cardiff City,51.4729,-3.20413,124,7
+2019-01-02 19:45:00,30666,Wolverhampton Wanderers,Crystal Palace,Molineux,52.5904,-2.13061,2,4
+2019-01-19 12:30:00,31278,Wolverhampton Wanderers,Leicester City,Molineux,52.5904,-2.13061,19,7
+2019-01-29 19:45:00,31122,Wolverhampton Wanderers,West Ham United,Molineux,52.5904,-2.13061,29,3
+2019-02-11 20:00:00,30687,Wolverhampton Wanderers,Newcastle United,Molineux,52.5904,-2.13061,42,2
+2019-03-02 15:00:00,31309,Wolverhampton Wanderers,Cardiff City,Molineux,52.5904,-2.13061,61,7
+2019-04-02 18:45:00,31302,Wolverhampton Wanderers,Manchester United,Molineux,52.5904,-2.13061,92,3
+2019-04-20 14:00:00,31096,Wolverhampton Wanderers,Brighton & Hove Albion,Molineux,52.5904,-2.13061,110,7
+2019-04-24 18:45:00,31436,Wolverhampton Wanderers,Arsenal,Molineux,52.5904,-2.13061,114,4
+2019-05-04 14:00:00,30456,Wolverhampton Wanderers,Fulham,Molineux,52.5904,-2.13061,124,7
+2019-01-02 19:45:00,40668,Chelsea,Southampton,Stamford Bridge,51.4816,-0.191034,2,4
+2019-01-12 17:30:00,40491,Chelsea,Newcastle United,Stamford Bridge,51.4816,-0.191034,12,7
+2019-02-02 15:00:00,40626,Chelsea,Huddersfield Town,Stamford Bridge,51.4816,-0.191034,33,7
+2019-02-27 20:00:00,40542,Chelsea,Tottenham Hotspur,Stamford Bridge,51.4816,-0.191034,58,4
+2019-03-10 14:05:00,40692,Chelsea,Wolverhampton Wanderers,Stamford Bridge,51.4816,-0.191034,69,1
+2019-04-03 18:45:00,38593,Chelsea,Brighton & Hove Albion,Stamford Bridge,51.4816,-0.191034,93,4
+2019-04-08 19:00:00,40537,Chelsea,West Ham United,Stamford Bridge,51.4816,-0.191034,98,2
+2019-04-22 19:00:00,40642,Chelsea,Burnley,Stamford Bridge,51.4816,-0.191034,112,2
+2019-05-05 13:00:00,40650,Chelsea,Watford,Stamford Bridge,51.4816,-0.191034,125,1
+2019-01-03 20:00:00,54511,Manchester City,Liverpool,Etihad,53.483,-2.20024,3,5
+2019-01-14 20:00:00,54171,Manchester City,Wolverhampton Wanderers,Etihad,53.483,-2.20024,14,2
+2019-02-03 16:30:00,54483,Manchester City,Arsenal,Etihad,53.483,-2.20024,34,1
+2019-02-10 16:00:00,54452,Manchester City,Chelsea,Etihad,53.483,-2.20024,41,1
+2019-02-27 20:00:00,53528,Manchester City,West Ham United,Etihad,53.483,-2.20024,58,4
+2019-03-09 17:30:00,54104,Manchester City,Watford,Etihad,53.483,-2.20024,68,7
+2019-04-03 18:45:00,53559,Manchester City,Cardiff City,Etihad,53.483,-2.20024,93,4
+2019-04-20 11:30:00,54489,Manchester City,Tottenham Hotspur,Etihad,53.483,-2.20024,110,7
+2019-05-06 19:00:00,54506,Manchester City,Leicester City,Etihad,53.483,-2.20024,126,2
+2019-01-12 15:00:00,19316,Burnley,Fulham,Turf Moor,53.7888,-2.23018,12,7
+2019-02-02 15:00:00,19787,Burnley,Southampton,Turf Moor,53.7888,-2.23018,33,7
+2019-02-23 12:30:00,21338,Burnley,Tottenham Hotspur,Turf Moor,53.7888,-2.23018,54,7
+2019-03-02 15:00:00,19223,Burnley,Crystal Palace,Turf Moor,53.7888,-2.23018,61,7
+2019-03-16 15:00:00,20719,Burnley,Leicester City,Turf Moor,53.7888,-2.23018,75,7
+2019-03-30 15:00:00,20990,Burnley,Wolverhampton Wanderers,Turf Moor,53.7888,-2.23018,89,7
+2019-04-13 14:00:00,21480,Burnley,Cardiff City,Turf Moor,53.7888,-2.23018,103,7
+2019-04-28 13:05:00,21605,Burnley,Manchester City,Turf Moor,53.7888,-2.23018,118,1
+2019-05-12 14:00:00,21461,Burnley,Arsenal,Turf Moor,53.7888,-2.23018,132,1
+2019-01-12 15:00:00,31491,Leicester City,Southampton,King Power,52.6203,-1.14217,12,7
+2019-02-03 14:05:00,32148,Leicester City,Manchester United,King Power,52.6203,-1.14217,34,1
+2019-02-23 17:30:00,31778,Leicester City,Crystal Palace,King Power,52.6203,-1.14217,54,7
+2019-02-26 19:45:00,30558,Leicester City,Brighton & Hove Albion,King Power,52.6203,-1.14217,57,3
+2019-03-09 15:00:00,32017,Leicester City,Fulham,King Power,52.6203,-1.14217,68,7
+2019-03-30 15:00:00,31530,Leicester City,AFC Bournemouth,King Power,52.6203,-1.14217,89,7
+2019-04-12 19:00:00,32108,Leicester City,Newcastle United,King Power,52.6203,-1.14217,102,6
+2019-04-28 11:00:00,32037,Leicester City,Arsenal,King Power,52.6203,-1.14217,118,1
+2019-05-12 14:00:00,32140,Leicester City,Chelsea,King Power,52.6203,-1.14217,132,1
+2019-01-12 15:00:00,25010,Crystal Palace,Watford,Selhurst Park,51.3983,-0.085455,12,7
+2019-02-02 15:00:00,25355,Crystal Palace,Fulham,Selhurst Park,51.3983,-0.085455,33,7
+2019-02-09 15:00:00,25552,Crystal Palace,West Ham United,Selhurst Park,51.3983,-0.085455,40,7
+2019-02-27 20:00:00,25754,Crystal Palace,Manchester United,Selhurst Park,51.3983,-0.085455,58,4
+2019-03-09 12:30:00,24972,Crystal Palace,Brighton & Hove Albion,Selhurst Park,51.3983,-0.085455,68,7
+2019-03-30 15:00:00,25193,Crystal Palace,Huddersfield Town,Selhurst Park,51.3983,-0.085455,89,7
+2019-04-14 13:05:00,25721,Crystal Palace,Manchester City,Selhurst Park,51.3983,-0.085455,104,1
+2019-04-27 14:00:00,25789,Crystal Palace,Everton,Selhurst Park,51.3983,-0.085455,117,7
+2019-05-12 14:00:00,25433,Crystal Palace,AFC Bournemouth,Selhurst Park,51.3983,-0.085455,132,1
+2019-01-13 16:30:00,80062,Tottenham Hotspur,Manchester United,Wembley,51.5559,-0.279543,13,1
+2019-01-30 20:00:00,29164,Tottenham Hotspur,Watford,Wembley,51.5559,-0.279543,30,4
+2019-02-02 12:30:00,41219,Tottenham Hotspur,Newcastle United,Wembley,51.5559,-0.279543,33,7
+2019-02-10 13:30:00,44154,Tottenham Hotspur,Leicester City,Wembley,51.5559,-0.279543,41,1
+2019-03-02 12:30:00,81332,Tottenham Hotspur,Arsenal,Wembley,51.5559,-0.279543,61,7
+2019-01-19 15:00:00,74532,Manchester United,Brighton & Hove Albion,Old Trafford,53.4631,-2.29139,19,7
+2019-01-29 20:00:00,74529,Manchester United,Burnley,Old Trafford,53.4631,-2.29139,29,3
+2019-02-24 14:05:00,74519,Manchester United,Liverpool,Old Trafford,53.4631,-2.29139,55,1
+2019-03-02 15:00:00,74459,Manchester United,Southampton,Old Trafford,53.4631,-2.29139,61,7
+2019-03-30 15:00:00,74543,Manchester United,Watford,Old Trafford,53.4631,-2.29139,89,7
+2019-04-13 16:30:00,74478,Manchester United,West Ham United,Old Trafford,53.4631,-2.29139,103,7
+2019-04-24 19:00:00,74431,Manchester United,Manchester City,Old Trafford,53.4631,-2.29139,114,4
+2019-04-28 15:30:00,74526,Manchester United,Chelsea,Old Trafford,53.4631,-2.29139,118,1
+2019-05-12 14:00:00,74457,Manchester United,Cardiff City,Old Trafford,53.4631,-2.29139,132,1
+2019-01-19 15:00:00,53171,Liverpool,Crystal Palace,Anfield,53.4308,-2.96096,19,7
+2019-01-30 20:00:00,53092,Liverpool,Leicester City,Anfield,53.4308,-2.96096,30,4
+2019-02-09 15:00:00,53178,Liverpool,AFC Bournemouth,Anfield,53.4308,-2.96096,40,7
+2019-02-27 20:00:00,53316,Liverpool,Watford,Anfield,53.4308,-2.96096,58,4
+2019-03-10 12:00:00,53310,Liverpool,Burnley,Anfield,53.4308,-2.96096,69,1
+2019-03-31 15:30:00,53322,Liverpool,Tottenham Hotspur,Anfield,53.4308,-2.96096,90,1
+2019-04-14 15:30:00,53279,Liverpool,Chelsea,Anfield,53.4308,-2.96096,104,1
+2019-04-26 19:00:00,53249,Liverpool,Huddersfield Town,Anfield,53.4308,-2.96096,116,6
+2019-05-12 14:00:00,53331,Liverpool,Wolverhampton Wanderers,Anfield,53.4308,-2.96096,132,1
+2019-01-19 15:00:00,19510,Watford,Burnley,Vicarage Road,51.6498,-0.401569,19,7
+2019-02-09 15:00:00,20333,Watford,Everton,Vicarage Road,51.6498,-0.401569,40,7
+2019-03-03 12:00:00,20062,Watford,Leicester City,Vicarage Road,51.6498,-0.401569,62,1
+2019-04-02 18:45:00,17301,Watford,Fulham,Vicarage Road,51.6498,-0.401569,92,3
+2019-04-15 19:00:00,20480,Watford,Arsenal,Vicarage Road,51.6498,-0.401569,105,2
+2019-04-23 18:45:00,19170,Watford,Southampton,Vicarage Road,51.6498,-0.401569,113,3
+2019-04-27 14:00:00,20323,Watford,Wolverhampton Wanderers,Vicarage Road,51.6498,-0.401569,117,7
+2019-05-12 14:00:00,20067,Watford,West Ham United,Vicarage Road,51.6498,-0.401569,132,1
+2019-01-20 16:00:00,24807,Fulham,Tottenham Hotspur,Craven Cottage,51.4749,-0.221619,20,1
+2019-01-29 19:45:00,22008,Fulham,Brighton & Hove Albion,Craven Cottage,51.4749,-0.221619,29,3
+2019-02-09 12:30:00,25001,Fulham,Manchester United,Craven Cottage,51.4749,-0.221619,40,7
+2019-03-03 14:05:00,24900,Fulham,Chelsea,Craven Cottage,51.4749,-0.221619,62,1
+2019-03-17 14:15:00,25043,Fulham,Liverpool,Craven Cottage,51.4749,-0.221619,76,1
+2019-03-30 12:30:00,25001,Fulham,Manchester City,Craven Cottage,51.4749,-0.221619,89,7
+2019-04-13 14:00:00,24971,Fulham,Everton,Craven Cottage,51.4749,-0.221619,103,7
+2019-04-27 14:00:00,23822,Fulham,Cardiff City,Craven Cottage,51.4749,-0.221619,117,7
+2019-05-12 14:00:00,24979,Fulham,Newcastle United,Craven Cottage,51.4749,-0.221619,132,1
+2019-04-03 18:45:00,59215,Tottenham Hotspur,Crystal Palace,Tottenham Hotspur,51.6044,-0.066389,93,4
+2019-04-13 11:30:00,58308,Tottenham Hotspur,Huddersfield Town,Tottenham Hotspur,51.6044,-0.066389,103,7
+2019-04-23 18:45:00,56251,Tottenham Hotspur,Brighton & Hove Albion,Tottenham Hotspur,51.6044,-0.066389,113,3
+2019-04-27 11:30:00,60043,Tottenham Hotspur,West Ham United,Tottenham Hotspur,51.6044,-0.066389,117,7
+2019-05-12 14:00:00,60124,Tottenham Hotspur,Everton,Tottenham Hotspur,51.6044,-0.066389,132,1

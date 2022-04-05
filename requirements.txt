@@ -1,8 +1,12 @@
+# data handling
 numpy
 pandas
+
+# visualisation
 matplotlib
 seaborn
 basemap
 
+# predictive models
 scipy
 sklearn

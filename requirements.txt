@@ -10,3 +10,4 @@ basemap
 # predictive models
 scipy
 sklearn
+imbalanced-learn

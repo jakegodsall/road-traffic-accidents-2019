@@ -12,11 +12,6 @@
 
 \maketitle
 
-% INTRODUCTION
-% Introduce the project
-% What is the data
-% What is the goal
-% How is the analysis structured?
 
 % ANALYSIS
 
@@ -34,17 +29,103 @@ A similar approach was taken to impute missing time values. In this case, the su
 
 \subsection{Primary Analysis}
 
-Upon first inspection of the data, it was determined that there exist two primary SPIKES in accident frequency within the ranges 8am-10am, and then again from 3pm 7pm Figure \ref{time_of_day}. These are the times of commute, and so such increases are to be expected.
+\subsection{Geospaital Analysis}
+
+An initial clustering analysis based around 8 cluster centres shows that generally the vast majority of accidents occur in densely populated areas, with significant levels in London, Birmingham, Manchester, Leeds, Newcastle and Edinburgh. However, it can also be seen that there is a significant number of accidents in Wales and in the South East, which would suggest that accidents also occur frequently in rural areas.
+
+\begin{figure}[h]
+\centering     %%% not \center
+\includegraphics[width=0.80\textwidth]{accident_clusters}
+\caption{Geospatial clustering of accidents.}
+\end{figure}
+
+\subsubsection{Temporal Analysis}
+
+An initial clustering analysis based around 8 cluster centres shows that generally the vast majority of accidents occur in densely populated areas, with significant levels in London, Birmingham, Manchester, Leeds, Newcastle and Edinburgh. However, it can also be seen that there is a significant number of accidents in Wales and in the South East, which would suggest that accidents also occur frequently in rural areas.
+
+Considering the temporal dimension of the data, it was determined that there exist two primary SPIKES in accident frequency within the ranges 8am-10am, and then again from 3pm 7pm **figure ref**
 
 \begin{figure}[h]
 \centering     %%% not \center
 \subfigure[Accidents by time of day.]{\label{fig:a}\includegraphics[width=0.45\textwidth]{time_of_day}}
 \subfigure[Accidents by day of the week.]{\label{fig:b}\includegraphics[width=0.45\textwidth]{day_of_week}}
-\caption{Number of accidents.}
+\caption{Temporal analysis of accident frequency.}
 \end{figure}
 
+These are the times of commute, and so such increases are to be expected.
+
+Further, it can be seen from **figure ref** that the frequency of traffic accidents is generally higher during the weekdays, with the maximum on Friday and the minimum on Sunday. This further supports the hypothesis that there is a significant increase in accidents during work-commute periods.
+
+\subsubsection{Vehicle Types}
+
+In the next stage of analysis, the aggregated accident data was subset according to the type of vehicle.
+
+Both the absolute number of accidents, as well as the proportion of total accidents was considered on the temporal axis.
+
+There is accident data for a total of twenty vehicle classifications. To simplify the analysis, only those contributing more than 2\% of the total number of accidents were considered.
+
+\begin{figure}[h]
+\centering     %%% not \center
+\subfigure[Vehicle type by day of the week.]{\label{fig:a}\includegraphics[width=0.80\textwidth]{vehicle_day_plot}}
+\subfigure[Vehicle type by time of day.]{\label{fig:b}\includegraphics[width=0.80\textwidth]{vehicle_hour_plot}}
+\caption{Type of vehicle involved in accidents.}
+\end{figure}
+
+As can be seen from **figure**, the distribution of accidents for each vehicle type generally follows the overall distribution for time of day. The one exception is for taxis and private car hire, which has a higher relative frequency of accidents between midnight and 9:00am than other vehicle types.
 
 \subsection{Hypothesis Testing}
+
+The following section describes three hypotheses that have been tested. The hypotheses are as follows:
+
+\begin{itemize}
+\item Is there a significant number of accidents in rural areas caused by or involving drivers who do not live in the vicinity, and are they more likely to have more passengers?
+\item Is there more accidents at the same time of day during periods of the year after which the sun has gone down compared to when it is still light?
+\item Is there more accidents in the vicinity of football grounds on days when premier league football matches take place?
+\end{itemize}
+
+\subsubsection{Rural Accidents}
+
+To test this hypothesis the data was subsetted for the conjunction of accidents taking place in rural areas and drivers who do not live in rural areas.
+
+\begin{figure}[h]
+\centering     %%% not \center
+\includegraphics[width=0.80\textwidth]{rural_accidents}
+\caption{Accidents in rural areas caused by people not living in rural areas.}
+\end{figure}
+
+By plotting the geospatial data for this subset it can be seen that a significant number of accidents occurring in rural areas of Wales, the South East, North Yorkshire and Scotland are caused by people who do not live in such areas.
+
+\begin{figure}[h]
+\centering     %%% not \center
+\includegraphics[width=.6\paperwidth]{casualty_rural}
+\caption{.}
+\end{figure}
+
+\newpage
+
+\subsubsection{Sunrise \& Sunset}
+
+\begin{figure}[h]
+\centering     %%% not \center
+\subfigure[Sunrise times throughout the year.]{\label{fig:a}\includegraphics[width=0.45\textwidth]{sunrise_with_lines}}
+\subfigure[Sunset times throughout the year.]{\label{fig:b}\includegraphics[width=0.45\textwidth]{sunset_with_lines}}
+\caption{Sunrise and sunset throughout the year.}
+\end{figure}
+
+- The hypothesis to be tested was that the ratio of average number of accidents per day in darkness would be higher than that in daylight for the same time delta over the entire year.
+- As can be seen in **ref fig**, the period tested for sunrise was between 7:00am and 8:00am, and for sunset between 8:30pm and 9:30pm.
+- To simplify the problem, The dates for which there were days of daylight and darkness in the specified time period were not included.
+- Graphically, this means, for example on **ref**, that only dates were analysed to the left and right of the outermost red dashed lines, as well as the dates included between the inner lines.
+- It was found that there was a total of 2988 accidents between 7:00am and 8:00am across the year, 1367 of which occurred during 155 days daylight, and 1621 occurring in 146 days of darkness.
+- This leads to an average number of accidents per day in daylight of 8.82, and 11.10 in darkness.
+- Hence, there is a 26\% increase in accidents during darkness during the hours of 7:00am  to 8:00am.
+- an equivalent analysis was done for the hours of 8:30pm to 9:30pm. 
+- A total of 2143 accidents occurred, 424 of which were during 58 days of daylight, and the remaining 1719 accidents occurred during 204 days of darkness.
+- The average number of accidents per day in daylight for this time period is 7.31, compared to 8.43 in darkness.
+- This leads to a 15\% increase in accidents during darkness during the hour of 8:30pm to 9:30pm
+
+\subsubsection{Accidents at Premier League Football Matches}
+
 
 A first hypothesis was tested to determine if there is a significant increase in traffic accidents surrounding football stadiums on the days of significant matches.
 
@@ -52,11 +133,18 @@ A test case was first carried out for the football match taking place at Old Tra
 
 Taking the premier league fixtures of 2019 REF, along with the coordinates of every premier league club stadium REF, the previous process was done iteratively for a total of 126 football matches during the year at 15 unique stadiums.
 
+\begin{figure}[h]
+\centering     %%% not \center
+\includegraphics[width=0.80\textwidth]{stadiums}
+\caption{Premiere League footaball stadiums analysed.}
+\end{figure}
+
 When summarised for every match, the z-score appears to be only 0.05 standard deviations from the average number of accidents. Although there is a significant difference in the number of accidents for different stadiums, on average the analysis implies that there is not a statistically significant rise in the number of accidents on the day of a football match compared to the typical same day of the week in the region.
 
 The following table shows the summary statistics for premier league football matches. The second column shows the average number of accidents in the area of the stadium on days when there is a match, and the third column shows the average number of accidents on the same day of the week when there is not a match being played.
 
-\begin{table}[!ht]
+
+\begin{figure}
     \centering
     \begin{tabular}{|l|l|l|l|}
     \hline
@@ -77,12 +165,55 @@ The following table shows the summary statistics for premier league football mat
         Vicarage Road & 0.8 & 2.0 & -0.23 \\ \hline
         Wembley & 9.2 & 12.7 & -0.86 \\ \hline
     \end{tabular}
-\end{table}
+    \caption{Summary statistics for accidents surrounding Premiere League football stadiums.}
+\end{figure}
+
 
 \section{Predictive Model}
 
+% introduction
+
+- A statistical model has been developed in order to predict the conditions under which accidents are most likely to occur in, as well as severity of injuries sustained.
+- The purpose of the model is to be able to predict when an accident will occur, in order to aid in providing recommendations.
+
+% assumptions
+
+- The author assumes that the subset of all data samples that does not contain a single unknown value in the initial predictors of interest is sufficient for training the model.
+- After doing so there was still 39,462 samples, 36.27% of the original data set.
+- A second assumption is that the nominal, ordinal and binary categorical predictors could all be treated equivalently during the feature selection process.
+
+% feature selection
+
+- In order to choose the most suitable features on which to train the model, all the features that seemed to be of value were joined into a single data set.
+- Categorical features were evaluated according to hypothesis test, and numerical features according to ANOVA.
+
+
+% sampling methods
+
+- The data is heavily imbalanced on accident severity, on the order of 50:10:1 for slight, serious and fatal injuries respectively.
+- In order to accommodate for this imbalance, an auxiliary data set was produced by oversampling the minority class by using the SMOTE augmentation technique.
+- This provided a balanced set on which the model could be trained.
+
+% models tested
+
+A host of classification models were evaluated by cross-validation on repeated stratified k-fold of the samples. 
+
+Decision tree based models were the by far the most accurate models employed, with the greatest accuracy coming from a stacked model.
+
+\begin{figure}[h]
+\centering     %%% not \center
+\includegraphics[width=0.80\textwidth]{model_plot}
+\caption{Accuracy of models evaluated using cross-validation.}
+\end{figure}
 
 \section{Predictions}
+
+The author makes the following recommendations based on the analysis delivered.
+\begin{itemize}
+\item To increase awareness about the dangers of traffic accidents for bicyclers, targeting both the cyclist and the driver.
+\item To increase awareness of the dangers of high speed motorcycle use in rural areas, **think bike**. 
+\item To consider better lighting conditions during the early hours of the morning and late at night depending on the sunset and sunrise cycle.
+\end{itemize}
 
 \section{Conclusion}
 

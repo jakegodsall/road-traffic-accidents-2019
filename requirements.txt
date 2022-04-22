@@ -1,13 +1,18 @@
-# data handling
+# data handling and manipulation
+pathlib
 numpy
 pandas
+pickle
 
-# visualisation
+# statistics
+scipy.stats
+
+# machine learning
+sklearn
+imbalanced-learn
+
+# data visualisation
 matplotlib
 seaborn
 basemap
-
-# predictive models
-scipy
-sklearn
-imbalanced-learn
+textwrap

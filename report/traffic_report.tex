@@ -106,20 +106,23 @@ The following section describes three hypotheses that have been tested. The hypo
 
 To test this hypothesis the data was filtered for the conjunction of accidents taking place in rural areas and drivers who do not live in rural areas. 
 
+
+
 \begin{figure}[h]
 \centering     %%% not \center
-\includegraphics[width=0.70\textwidth]{rural_accidents}
-\caption{Accidents in rural areas caused by people not living in rural areas.}
-\label{rural-uk}
+\subfigure[Accidents in rural areas.]{\label{fig:a-rural-accidents}\includegraphics[width=0.45\textwidth]{rural_accidents}}
+\subfigure[Accidents in urban areas.]{\label{fig:b-urban-accidents}\includegraphics[width=0.45\textwidth]{urban_accidents}}
+\caption{Accidents by locality type.}
+\label{accidents-locality}
 \end{figure}
 
-As shown in figure \ref{rural-uk}, by plotting the geospatial data for this subset, it can be seen that a significant number of accidents occurring in rural areas of Wales, the South East, North Yorkshire and Scotland are caused by people who do not live in such areas.
+As shown in figure \ref{accidents-locality}, by plotting the geospatial data for the accident occurring in rural areas by people not living there, and comparing against the accidents in urban locations, it can be seen that a significant number of accidents occurring in rural areas of Wales, the South East, North Yorkshire and Scotland are caused by people who do not live in such areas.
 
 \newpage
 
 Next, we determined the ratio of accidents in rural areas involving people not living in those areas to the total frequency of accidents, parametrised by vehicle type, figure \ref{vehicle-rural}.
 
-Hence, we see that the most significant increase in accidents in rural areas exist for motorcyclists of 500cc and higher, horse riders and mobility scooter riders.
+Hence, we see that the most significant increase in accidents in rural areas exist for goods vehicles, motorcyclists of 500cc and higher, horse riders and mobility scooter riders. However, after taking the absolute magnitudes of these values into account, motorcyclists of all engine rating were the highest group at risk.
 
 \newpage
 
@@ -150,13 +153,13 @@ As can be seen in figure \ref{sunrise-sunset}, the period tested for sunrise was
 
 To simplify the problem, The dates for which there were days of daylight and darkness in the specified time period were not included. Graphically, this means, for example on figure \ref{fig:sunrise}, that only dates were analysed to the left and right of the outermost red dashed lines, as well as the dates included between the inner lines.
 
-It was found that there was a total of 2988 accidents between 7:00am and 8:00am across the year, 1367 of which occurred during 155 days daylight, and 1621 occurring in 146 days of darkness. This leads to an average number of accidents per day in daylight of 8.82, and 11.10 in darkness. Hence, there is a 26\% increase in accidents during darkness during the hours of 7:00am  to 8:00am.
+It was found that there was a total of 4938 accidents between 7:00am and 8:00am across the year, 2254 of which occurred during 155 days daylight, and 2684 occurring in 146 days of darkness. This leads to an average number of accidents per day in daylight of 14.54, and 18.38 in darkness. Hence, there is a 26\% increase in accidents during darkness during the hours of 7:00am  to 8:00am.
 
-An equivalent analysis was done for the hours of 8:30pm to 9:30pm. A total of 2143 accidents occurred, 424 of which were during 58 days of daylight, and the remaining 1719 accidents occurred during 204 days of darkness. The average number of accidents per day in daylight for this time period is 7.31, compared to 8.43 in darkness. This leads to a 15\% increase in accidents during darkness during the hour of 8:30pm to 9:30pm.
+An equivalent analysis was done for the hours of 8:30pm to 9:30pm. A total of 3623 accidents occurred, 1054 of which were during 97 days of daylight, and the remaining 2569 accidents occurred during 204 days of darkness. The average number of accidents per day in daylight for this time period is 10.87, compared to 12.59 in darkness. This leads to a 16\% increase in accidents during darkness during the hour of 8:30pm to 9:30pm.
 
 \subsubsection{Accidents at Premier League Football Matches}
 
-A test case was first carried out for the football match taking place at Old Trafford on Sunday 24th February 2019. Considering any accident within five kilometres of the stadium as being connected to the event, the accident count was compared against the number of accidents in this region every other Sunday during the year. On the day of the match, the number of accidents was 1.77 standard deviations from the mean. This was taken to be significant and worthy of further investigation.
+A test case was first carried out for the football match taking place at Old Trafford on Sunday 24th February 2019. Considering any accident within five kilometres of the stadium as being connected to the event, the accident count was compared against the number of accidents in this region every other Sunday during the year. On the day of the match, the number of accidents was 1.30 standard deviations from the mean. This was taken to be significant and worthy of further investigation.
 
 Taking the premier league fixtures of 2019 \parencite{fixtures}, along with the coordinates of every premier league club stadium \parencite{stadiums}, the previous process was done iteratively for a total of 126 football matches during the year at 15 unique stadiums.
 
@@ -166,7 +169,7 @@ Taking the premier league fixtures of 2019 \parencite{fixtures}, along with the 
 \caption{Premiere League footaball stadiums analysed.}
 \end{figure}
 
-When summarised for every match, the z-score appears to be only 0.05 standard deviations from the average number of accidents. Although there is a significant difference in the number of accidents for different stadiums, on average the analysis implies that there is not a statistically significant rise in the number of accidents on the day of a football match compared to the typical same day of the week in the region.
+When summarised for every match, the z-score appears to be slightly below the average number of accidents. Although there is a significant difference in the number of accidents for different stadiums, on average the analysis implies that there is not a statistically significant rise in the number of accidents on the day of a football match compared to the typical same day of the week in the region.
 
 The table above (figure \ref{football}) shows the summary statistics for premier league football matches. The \textit{Accidents 1} column shows the average number of accidents in the area of the stadium on days when there is a match, and the \textit{Accidents 2} column shows the average number of accidents on the same day of the week when there is not a match being played.
 
@@ -206,11 +209,11 @@ The purpose of developing such a model is to be able to predict when an accident
 
 % assumptions
 
-The author assumes that the subset of all data samples that does not contain a single unknown value in the initial predictors of interest is sufficient for training the model. After doing so there was 39,462 samples, 36.27\% of the original data set. A second assumption made was that the nominal, ordinal and binary categorical predictors could all be treated equivalently during the feature selection process.
+The author assumes that the subset of all data samples that does not contain a single unknown value in the initial predictors of interest is sufficient for training the model. After doing so there was 98,654 samples, 33.38\% of the original merged data sets. A second assumption made was that the nominal, ordinal and binary categorical predictors could all be treated equivalently during the feature selection process.
 
 % feature selection
 
-In order to choose the most suitable features on which to train the model, all the features that seemed to be of value were joined into a single data set. Categorical features were evaluated according to a $\chi^{2}$ hypothesis test CITE, and numerical features according to ANOVA .
+In order to choose the most suitable features on which to train the model, all the features that seemed to be of value were joined into a single data set. Categorical features were evaluated according to an ANOVA hypothesis test \parencite{anova}.
 
 % sampling methods
 
@@ -220,7 +223,7 @@ The data was heavily imbalanced on accident severity, on the order of 50:10:1 fo
 
 A host of classification models were evaluated by cross-validation on a repeated stratified k-fold of the samples.
 
-Decision tree based models were the by far the most accurate models employed, with the greatest accuracy coming from a stacked model.
+Decision tree based models were the by far the most accurate models employed, with the greatest accuracy coming from a random forest model.
 
 \begin{figure}[h]
 \centering     %%% not \center
@@ -229,9 +232,9 @@ Decision tree based models were the by far the most accurate models employed, wi
 \label{models}
 \end{figure}
 
-As can be seen in figure \ref{models}, a stacked model achieved 95\% accuracy during the cross-validation process. 
+As can be seen in figure \ref{models}, a stacked model achieved 92.62\% accuracy during the cross-validation process. 
 
-However, it should be noted that when the model was later trained on the original dataset, that the accuracy regressed to 87\%.
+However, it should be noted that when the model was later trained on the original dataset, that the accuracy regressed to 84.2\%.
 
 \section{Predictions}
 

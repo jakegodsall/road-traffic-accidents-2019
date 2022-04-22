@@ -110,7 +110,6 @@
     \verb ty-and-methodology
     \endverb
     \field{year}{2021}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{bs4}{software}{}
@@ -222,7 +221,7 @@
   \entry{anova}{article}{}
     \name{author}{2}{}{%
       {{hash=SL}{%
-         family={St»hle},
+         family={Sthle},
          familyi={S\bibinitperiod},
          given={Lars},
          giveni={L\bibinitperiod},
@@ -240,21 +239,6 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{1989}
     \field{labeldatesource}{}
-    \field{abstract}{%
-    Univariate ANOVA is reviewed from a user point-of-view with emphasis on
-  understanding the model building and the assumptions underlying the method.
-  Illustrative examples are taken from organic chemistry and analytical
-  chemistry. The use of graphical techniques to visualize the ANOVA model as
-  well as to analyse residuals is recommended. The main models of ANOVA are
-  developed in some detail including one-factor ANOVA, crossed designs, nested
-  designs, repeated measures ANOVA and variance components estimation.
-  Hypothesis testing by F-tests-and follow up by pairwise comparison methods is
-  shown. The distinction between random effects and fixed effects is explained.
-  Methods to handle non-linearities by transformations or by using response
-  surface methodology are mentioned. Throughout the paper the importance of
-  experimental design is emphasized. References are given to ANOVA methods for
-  more complicated models.%
-    }
     \verb{doi}
     \verb https://doi.org/10.1016/0169-7439(89)80095-4
     \endverb

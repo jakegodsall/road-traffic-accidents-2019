@@ -3,6 +3,7 @@ pathlib
 numpy
 pandas
 pickle
+bs4
 
 # statistics
 scipy.stats

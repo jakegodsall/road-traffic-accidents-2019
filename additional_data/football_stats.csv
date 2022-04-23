@@ -53,24 +53,6 @@ datetime,attendance,home_team_name,away_team_name,stadium_name,latitude,longitud
 2019-04-03 18:45:00,53559,Manchester City,Cardiff City,Etihad,53.483,-2.20024,93,4
 2019-04-20 11:30:00,54489,Manchester City,Tottenham Hotspur,Etihad,53.483,-2.20024,110,7
 2019-05-06 19:00:00,54506,Manchester City,Leicester City,Etihad,53.483,-2.20024,126,2
-2019-01-12 15:00:00,19316,Burnley,Fulham,Turf Moor,53.7888,-2.23018,12,7
-2019-02-02 15:00:00,19787,Burnley,Southampton,Turf Moor,53.7888,-2.23018,33,7
-2019-02-23 12:30:00,21338,Burnley,Tottenham Hotspur,Turf Moor,53.7888,-2.23018,54,7
-2019-03-02 15:00:00,19223,Burnley,Crystal Palace,Turf Moor,53.7888,-2.23018,61,7
-2019-03-16 15:00:00,20719,Burnley,Leicester City,Turf Moor,53.7888,-2.23018,75,7
-2019-03-30 15:00:00,20990,Burnley,Wolverhampton Wanderers,Turf Moor,53.7888,-2.23018,89,7
-2019-04-13 14:00:00,21480,Burnley,Cardiff City,Turf Moor,53.7888,-2.23018,103,7
-2019-04-28 13:05:00,21605,Burnley,Manchester City,Turf Moor,53.7888,-2.23018,118,1
-2019-05-12 14:00:00,21461,Burnley,Arsenal,Turf Moor,53.7888,-2.23018,132,1
-2019-01-12 15:00:00,31491,Leicester City,Southampton,King Power,52.6203,-1.14217,12,7
-2019-02-03 14:05:00,32148,Leicester City,Manchester United,King Power,52.6203,-1.14217,34,1
-2019-02-23 17:30:00,31778,Leicester City,Crystal Palace,King Power,52.6203,-1.14217,54,7
-2019-02-26 19:45:00,30558,Leicester City,Brighton & Hove Albion,King Power,52.6203,-1.14217,57,3
-2019-03-09 15:00:00,32017,Leicester City,Fulham,King Power,52.6203,-1.14217,68,7
-2019-03-30 15:00:00,31530,Leicester City,AFC Bournemouth,King Power,52.6203,-1.14217,89,7
-2019-04-12 19:00:00,32108,Leicester City,Newcastle United,King Power,52.6203,-1.14217,102,6
-2019-04-28 11:00:00,32037,Leicester City,Arsenal,King Power,52.6203,-1.14217,118,1
-2019-05-12 14:00:00,32140,Leicester City,Chelsea,King Power,52.6203,-1.14217,132,1
 2019-01-12 15:00:00,25010,Crystal Palace,Watford,Selhurst Park,51.3983,-0.085455,12,7
 2019-02-02 15:00:00,25355,Crystal Palace,Fulham,Selhurst Park,51.3983,-0.085455,33,7
 2019-02-09 15:00:00,25552,Crystal Palace,West Ham United,Selhurst Park,51.3983,-0.085455,40,7
@@ -80,6 +62,24 @@ datetime,attendance,home_team_name,away_team_name,stadium_name,latitude,longitud
 2019-04-14 13:05:00,25721,Crystal Palace,Manchester City,Selhurst Park,51.3983,-0.085455,104,1
 2019-04-27 14:00:00,25789,Crystal Palace,Everton,Selhurst Park,51.3983,-0.085455,117,7
 2019-05-12 14:00:00,25433,Crystal Palace,AFC Bournemouth,Selhurst Park,51.3983,-0.085455,132,1
+2019-01-12 15:00:00,31491,Leicester City,Southampton,King Power,52.6203,-1.14217,12,7
+2019-02-03 14:05:00,32148,Leicester City,Manchester United,King Power,52.6203,-1.14217,34,1
+2019-02-23 17:30:00,31778,Leicester City,Crystal Palace,King Power,52.6203,-1.14217,54,7
+2019-02-26 19:45:00,30558,Leicester City,Brighton & Hove Albion,King Power,52.6203,-1.14217,57,3
+2019-03-09 15:00:00,32017,Leicester City,Fulham,King Power,52.6203,-1.14217,68,7
+2019-03-30 15:00:00,31530,Leicester City,AFC Bournemouth,King Power,52.6203,-1.14217,89,7
+2019-04-12 19:00:00,32108,Leicester City,Newcastle United,King Power,52.6203,-1.14217,102,6
+2019-04-28 11:00:00,32037,Leicester City,Arsenal,King Power,52.6203,-1.14217,118,1
+2019-05-12 14:00:00,32140,Leicester City,Chelsea,King Power,52.6203,-1.14217,132,1
+2019-01-12 15:00:00,19316,Burnley,Fulham,Turf Moor,53.7888,-2.23018,12,7
+2019-02-02 15:00:00,19787,Burnley,Southampton,Turf Moor,53.7888,-2.23018,33,7
+2019-02-23 12:30:00,21338,Burnley,Tottenham Hotspur,Turf Moor,53.7888,-2.23018,54,7
+2019-03-02 15:00:00,19223,Burnley,Crystal Palace,Turf Moor,53.7888,-2.23018,61,7
+2019-03-16 15:00:00,20719,Burnley,Leicester City,Turf Moor,53.7888,-2.23018,75,7
+2019-03-30 15:00:00,20990,Burnley,Wolverhampton Wanderers,Turf Moor,53.7888,-2.23018,89,7
+2019-04-13 14:00:00,21480,Burnley,Cardiff City,Turf Moor,53.7888,-2.23018,103,7
+2019-04-28 13:05:00,21605,Burnley,Manchester City,Turf Moor,53.7888,-2.23018,118,1
+2019-05-12 14:00:00,21461,Burnley,Arsenal,Turf Moor,53.7888,-2.23018,132,1
 2019-01-13 16:30:00,80062,Tottenham Hotspur,Manchester United,Wembley,51.5559,-0.279543,13,1
 2019-01-30 20:00:00,29164,Tottenham Hotspur,Watford,Wembley,51.5559,-0.279543,30,4
 2019-02-02 12:30:00,41219,Tottenham Hotspur,Newcastle United,Wembley,51.5559,-0.279543,33,7
@@ -94,6 +94,14 @@ datetime,attendance,home_team_name,away_team_name,stadium_name,latitude,longitud
 2019-04-24 19:00:00,74431,Manchester United,Manchester City,Old Trafford,53.4631,-2.29139,114,4
 2019-04-28 15:30:00,74526,Manchester United,Chelsea,Old Trafford,53.4631,-2.29139,118,1
 2019-05-12 14:00:00,74457,Manchester United,Cardiff City,Old Trafford,53.4631,-2.29139,132,1
+2019-01-19 15:00:00,19510,Watford,Burnley,Vicarage Road,51.6498,-0.401569,19,7
+2019-02-09 15:00:00,20333,Watford,Everton,Vicarage Road,51.6498,-0.401569,40,7
+2019-03-03 12:00:00,20062,Watford,Leicester City,Vicarage Road,51.6498,-0.401569,62,1
+2019-04-02 18:45:00,17301,Watford,Fulham,Vicarage Road,51.6498,-0.401569,92,3
+2019-04-15 19:00:00,20480,Watford,Arsenal,Vicarage Road,51.6498,-0.401569,105,2
+2019-04-23 18:45:00,19170,Watford,Southampton,Vicarage Road,51.6498,-0.401569,113,3
+2019-04-27 14:00:00,20323,Watford,Wolverhampton Wanderers,Vicarage Road,51.6498,-0.401569,117,7
+2019-05-12 14:00:00,20067,Watford,West Ham United,Vicarage Road,51.6498,-0.401569,132,1
 2019-01-19 15:00:00,53171,Liverpool,Crystal Palace,Anfield,53.4308,-2.96096,19,7
 2019-01-30 20:00:00,53092,Liverpool,Leicester City,Anfield,53.4308,-2.96096,30,4
 2019-02-09 15:00:00,53178,Liverpool,AFC Bournemouth,Anfield,53.4308,-2.96096,40,7
@@ -103,14 +111,6 @@ datetime,attendance,home_team_name,away_team_name,stadium_name,latitude,longitud
 2019-04-14 15:30:00,53279,Liverpool,Chelsea,Anfield,53.4308,-2.96096,104,1
 2019-04-26 19:00:00,53249,Liverpool,Huddersfield Town,Anfield,53.4308,-2.96096,116,6
 2019-05-12 14:00:00,53331,Liverpool,Wolverhampton Wanderers,Anfield,53.4308,-2.96096,132,1
-2019-01-19 15:00:00,19510,Watford,Burnley,Vicarage Road,51.6498,-0.401569,19,7
-2019-02-09 15:00:00,20333,Watford,Everton,Vicarage Road,51.6498,-0.401569,40,7
-2019-03-03 12:00:00,20062,Watford,Leicester City,Vicarage Road,51.6498,-0.401569,62,1
-2019-04-02 18:45:00,17301,Watford,Fulham,Vicarage Road,51.6498,-0.401569,92,3
-2019-04-15 19:00:00,20480,Watford,Arsenal,Vicarage Road,51.6498,-0.401569,105,2
-2019-04-23 18:45:00,19170,Watford,Southampton,Vicarage Road,51.6498,-0.401569,113,3
-2019-04-27 14:00:00,20323,Watford,Wolverhampton Wanderers,Vicarage Road,51.6498,-0.401569,117,7
-2019-05-12 14:00:00,20067,Watford,West Ham United,Vicarage Road,51.6498,-0.401569,132,1
 2019-01-20 16:00:00,24807,Fulham,Tottenham Hotspur,Craven Cottage,51.4749,-0.221619,20,1
 2019-01-29 19:45:00,22008,Fulham,Brighton & Hove Albion,Craven Cottage,51.4749,-0.221619,29,3
 2019-02-09 12:30:00,25001,Fulham,Manchester United,Craven Cottage,51.4749,-0.221619,40,7

@@ -6,8 +6,8 @@
 \usepackage{subfigure}
 
 \usepackage[%
-  backend=bibtex      % biber or bibtex
- ,style=authoryear-ibid
+  backend=bibtex,natbib      % biber or bibtex
+ ,style=authoryear
  ,sorting=none
  , dashed=false
 ]{biblatex}
@@ -15,7 +15,7 @@
 \DeclareNameAlias{sortname}{first-last}
 
 
-\title{Traffic Accidents Analysis}
+\title{Analysis of Traffic Accidents for the United Kingdom, 2019}
 \date{}
 
 \begin{document}
@@ -27,9 +27,11 @@
 
 \section{Introduction}
 
-The following report is an analysis of traffic accidents in the United Kingdom during the year of 2019, based on the freely available data published by the Department for \parencite{accidents2019, vehicles2019, casualties2019}. There are two primary concerns of traffic accidents, the frequency at which they occur and their severity. As such, the report will focus on those metrics.
+The following report is an analysis of traffic accidents in the United Kingdom during 2019, based on the freely available data published by the \citet{data2019}. There are two primary concerns of traffic accidents, the frequency at which they occur and their severity. As such, the report will focus on those metrics.
 
-The report is structured as follows. Firstly, a broad, frequentist approach to find common trends in the data, followed by the testing of three distinct hypotheses. Next, a probabilistic model was developed to predict the severity of accidents based on a subset of the predictors that are recorded via \textcite{stats2019}. Finally, a selection of recommendations are proposed with reference to the analysis performed.
+The report is structured as follows. Firstly, a broad, frequentist approach to finding common trends in the data, followed by the testing of three distinct hypotheses. Next, a probabilistic model was developed to predict the severity of accidents based on a subset of the predictors that are recorded via \textcite{stats2019}. Finally, a selection of recommendations is proposed with reference to the analysis performed.
+
+\newpage 
 
 \section{Analysis}
 
@@ -37,15 +39,16 @@ The report is structured as follows. Firstly, a broad, frequentist approach to f
 
 The data employed in this analysis was for the most part clean and structured, except for a few key areas.
 
-There were twenty-eight samples with missing coordinate data. However, these samples did have associated local district information. By use of the Beautiful Soup package \parencite{bs4}, the coordinate data from all towns and cities in the United Kingdom were scraped from \cite{cities} and imputed into the dataset where coordinate data was lacking.
+There were twenty-eight samples with missing coordinate data. However, these samples did have associated local district information. By use of the Beautiful Soup package \parencite{bs4}, the coordinate data from all towns and cities in the United Kingdom were mined from the internet \parencite{cities} and imputed into the dataset where coordinate data was lacking.
 
-A similar approach was taken to impute missing time values. In this case, the sunrise and sunset times for London were scraped from the web \parencite{sunrise_sunset}. According to the light conditions of the sample, the median time between sunrise and sunset on the day of the accident was imputed in the case of light, and the median time between sunset and sunrise in the case of darkness. The purpose of this was to ensure that imputed data does not contradict the obvious and empirically true covariance between the time of the day and light conditions.
+A similar approach was taken to impute missing time values. In this case, the sunrise and sunset times for London in 2019 were scraped from the web \parencite{sunrise_sunset}. According to the light conditions of the sample, the median time between sunrise and sunset on the day of the accident was imputed in the case of light, and the median time between sunset and sunrise in the case of darkness. The purpose of this was to ensure that imputed data does not contradict the obvious and empirically true covariance between the time of the day and light conditions.
+
 
 \subsection{Primary Analysis}
 
 \subsubsection{Geospaital Analysis}
 
-An initial clustering analysis based around eight cluster centres shows that generally the vast majority of accidents occur in densely populated areas, with significant levels in London, Birmingham, Manchester, Leeds, Newcastle and Edinburgh. However, it can also be seen that there is a significant number of accidents in Wales and in the South East, which would suggest that accidents also occur frequently in rural areas. Based on this result, the hypothesis regarding accidents in rural locations was carried out.
+An initial clustering analysis based around eight cluster centres shows that generally, the vast majority of accidents occur in densely populated areas, with significant levels in London, Birmingham, Manchester, Leeds, Newcastle and Edinburgh. However, it can also be seen that there is a significant number of accidents in Wales and in the South East, which would suggest that accidents also occur frequently in rural areas. Based on this result, the hypothesis regarding accidents in rural locations was carried out.
 
 \begin{figure}[ht]
 \centering     %%% not \center
@@ -57,7 +60,8 @@ An initial clustering analysis based around eight cluster centres shows that gen
 
 \subsubsection{Temporal Analysis}
 
-Considering the temporal dimension of the data, it was determined that there exist two primary peaks in accident frequency within the ranges 8am-10am, and then again from 3pm to 7pm, shown in figure \ref{fig:a-hour_of_day}.
+Considering the temporal dimension of the data, it was determined that there exist two primary peaks in accident frequency within the ranges 8:00 am to 10:00 am, and then again from 3:00 pm to 7:00 pm, shown in figure \ref{fig:a-hour_of_day}.
+
 
 \begin{figure}[h]
 \centering     %%% not \center
@@ -66,31 +70,38 @@ Considering the temporal dimension of the data, it was determined that there exi
 \caption{Temporal analysis of accident frequency.}
 \end{figure}
 
-These are the usual times at which people commute, and so such increases are to be expected.
+These are the usual times at which people commute, so such increases are to be expected.
 
 Further, it can be seen from figure \ref{fig:b-day_of_week} that the frequency of traffic accidents is generally higher during the weekdays, with the maximum on Friday and the minimum on Sunday. This further supports the hypothesis that there is a significant increase in accidents during work-commute periods.
+
+\newpage
 
 \subsubsection{Vehicle Types}
 
 In the next stage of analysis, the aggregated accident data was partitioned according to the type of vehicle.
 
-Both the absolute number of accidents, as well as the proportion of total accidents was considered on the temporal axis, as can be seen in figure \ref{vehicles-day-week}.
+Both the absolute number of accidents, as well as the proportion of total accidents were considered on the temporal axis, as can be seen in figure \ref{vehicles-day-week}.
 
-There is accident data for a total of twenty vehicle classifications. To simplify the analysis, only those contributing more than 2\% of the total number of accidents were considered.
+There are accident data for a total of twenty vehicle classifications. To simplify the analysis, only those contributing more than 2\% of the total number of accidents were considered.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering     %%% not \center
-\subfigure[Vehicle type by time of day.]{\label{fig:a-vehicle-hour}\includegraphics[width=0.80\textwidth]{vehicle_hour_plot}}
-\subfigure[Vehicle type by day of the week.]{\label{fig:b-vehicle-day}\includegraphics[width=0.80\textwidth]{vehicle_day_plot}}
-\caption{Type of vehicle involved in accidents.}
-\label{vehicles-day-week}
+\includegraphics[width=0.80\textwidth]{vehicle_hour_plot}
+\caption{Vehicle type by time of day.}
+\label{fig:a-vehicle-hour}
 \end{figure}
 
+\begin{figure}[ht]
+\centering     %%% not \center
+\includegraphics[width=0.80\textwidth]{vehicle_day_plot}
+\caption{Vehicle type by day of the week.}
+\label{fig:b-vehicle-day}
+\end{figure}
+
+
 \newpage
 
-As can be seen from \ref{fig:a-vehicle-hour}, the distribution of accidents for each vehicle type generally follows the overall distribution for time of day. The one exception is for taxis and private car hire, which has a higher relative frequency of accidents between midnight and 9:00am than other vehicle types.
-
-\newpage
+As can be seen from \ref{fig:a-vehicle-hour}, the distribution of accidents for each vehicle type generally follows the overall distribution for time of day. The one exception is for taxis and private car hire, which have a higher relative frequency of accidents between midnight and 9:00 am than other vehicle types.
 
 \subsection{Hypothesis Testing}
 
@@ -98,15 +109,13 @@ The following section describes three hypotheses that have been tested. The hypo
 
 \begin{itemize}
 \item Is there a significant number of accidents in rural areas caused by or involving drivers who do not live in the vicinity, and which type of vehicles are involved?
-\item Is there more accidents at the same time of day during periods of the year after which the sun has gone down compared to when it is still light?
-\item Is there more accidents in the vicinity of football grounds on days when premier league football matches take place?
+\item Are there more accidents at the same time of day during periods of the year after which the sun has gone down compared to when it is still light?
+\item Are there more accidents in the vicinity of football grounds on days when Premier League football matches take place?
 \end{itemize}
 
 \subsubsection{Rural Accidents}
 
-To test this hypothesis the data was filtered for the conjunction of accidents taking place in rural areas and drivers who do not live in rural areas. 
-
-
+To test this hypothesis, the data was filtered for the conjunction of accidents occurring in rural areas and drivers who do not live in rural areas. 
 
 \begin{figure}[h]
 \centering     %%% not \center
@@ -116,32 +125,30 @@ To test this hypothesis the data was filtered for the conjunction of accidents t
 \label{accidents-locality}
 \end{figure}
 
-As shown in figure \ref{accidents-locality}, by plotting the geospatial data for the accident occurring in rural areas by people not living there, and comparing against the accidents in urban locations, it can be seen that a significant number of accidents occurring in rural areas of Wales, the South East, North Yorkshire and Scotland are caused by people who do not live in such areas.
+As shown in figure \ref{accidents-locality}, by plotting the geospatial data for the accident occurring in rural areas by people not living there, and comparing it against the accidents in urban locations, it can be seen that a significant number of accidents occurring in rural areas of Wales, the South East, North Yorkshire and Scotland are caused by people who do not live in such areas.
 
-\newpage
+Next, the ratio of accidents in rural areas involving people not living in those areas to the total frequency of accidents, parametrised by vehicle type, were determined (figure \ref{vehicle-rural}).
 
-Next, we determined the ratio of accidents in rural areas involving people not living in those areas to the total frequency of accidents, parametrised by vehicle type, figure \ref{vehicle-rural}.
+Hence, it was shown that the most significant increase in accidents in rural areas exists for goods vehicles, motorcyclists of 500cc and higher, horse riders and mobility scooter riders. However, after taking the absolute magnitudes of these values into account, motorcyclists of all engine ratings were the highest group at risk.
 
-Hence, we see that the most significant increase in accidents in rural areas exist for goods vehicles, motorcyclists of 500cc and higher, horse riders and mobility scooter riders. However, after taking the absolute magnitudes of these values into account, motorcyclists of all engine rating were the highest group at risk.
+This could be due to the fact that motorcyclists are more likely to ride in more rural areas for recreation \parencite{motorcycle}, leading to a significant increase in accidents.
 
-\newpage
-
-\begin{figure}[h]
+\begin{figure}[hbtp]
 \centering     %%% not \center
-\includegraphics[width=0.70\textwidth]{casualty_rural}
+\includegraphics[width=0.65\paperwidth]{casualty_rural}
 \caption{Ratio of accidents in rural areas to all areas by type of vehicle.}
 \label{vehicle-rural}
 \end{figure}
 
 
-This could be due to motorcyclists choosing to ride in more rural areas for recreation, **CITE**, lending to a significant increase in accidents.
+\newpage
 
 \newpage
 
 \subsubsection{Sunrise \& Sunset}
 
-The hypothesis to be tested was that the ratio of average number of accidents per day in darkness would be higher than that in daylight for the same time delta over the entire year. 
-As can be seen in figure \ref{sunrise-sunset}, the period tested for sunrise was between 7:00am and 8:00am, and for sunset between 8:30pm and 9:30pm.
+The hypothesis to be tested was that the ratio of the average number of accidents per day in darkness would be higher than that in daylight for the same time delta over the entire year. 
+As can be seen in figure \ref{sunrise-sunset}, the period tested for sunrise was between 7:00 am and 8:00 am, and for sunset between 8:30 pm and 9:30 pm.
 
 \begin{figure}[h]
 \centering     %%% not \center
@@ -151,27 +158,27 @@ As can be seen in figure \ref{sunrise-sunset}, the period tested for sunrise was
 \label{sunrise-sunset}
 \end{figure}
 
-To simplify the problem, The dates for which there were days of daylight and darkness in the specified time period were not included. Graphically, this means, for example on figure \ref{fig:sunrise}, that only dates were analysed to the left and right of the outermost red dashed lines, as well as the dates included between the inner lines.
+To simplify the problem, The dates for which there were days of daylight and darkness in the specified time period were not included. Graphically, this means, for example in figure \ref{fig:sunrise}, that only dates were analysed to the left and right of the outermost red dashed lines, as well as the dates included between the inner lines.
 
-It was found that there was a total of 4938 accidents between 7:00am and 8:00am across the year, 2254 of which occurred during 155 days daylight, and 2684 occurring in 146 days of darkness. This leads to an average number of accidents per day in daylight of 14.54, and 18.38 in darkness. Hence, there is a 26\% increase in accidents during darkness during the hours of 7:00am  to 8:00am.
+It was found that there was a total of 4938 accidents between 7:00 am and 8:00 am across the year, 2254 of which occurred during 155 days of daylight, and 2684 occurred in 146 days of darkness. This leads to an average number of accidents per day in daylight of 14.54, and 18.38 in darkness. Hence, there is a 26\% increase in accidents during darkness during the hours of 7:00 am  to 8:00 am.
 
-An equivalent analysis was done for the hours of 8:30pm to 9:30pm. A total of 3623 accidents occurred, 1054 of which were during 97 days of daylight, and the remaining 2569 accidents occurred during 204 days of darkness. The average number of accidents per day in daylight for this time period is 10.87, compared to 12.59 in darkness. This leads to a 16\% increase in accidents during darkness during the hour of 8:30pm to 9:30pm.
+An equivalent analysis was done for the hours of 8:30 pm to 9:30 pm. A total of 3623 accidents occurred, 1054 of which were during 97 days of daylight, and the remaining 2569 accidents occurred during 204 days of darkness. The average number of accidents per day in daylight for this period is 10.87, compared to 12.59 in darkness. This leads to a 16\% increase in accidents during darkness during the hour of 8:30 pm to 9:30 pm.
 
 \subsubsection{Accidents at Premier League Football Matches}
 
 A test case was first carried out for the football match taking place at Old Trafford on Sunday 24th February 2019. Considering any accident within five kilometres of the stadium as being connected to the event, the accident count was compared against the number of accidents in this region every other Sunday during the year. On the day of the match, the number of accidents was 1.30 standard deviations from the mean. This was taken to be significant and worthy of further investigation.
 
-Taking the premier league fixtures of 2019 \parencite{fixtures}, along with the coordinates of every premier league club stadium \parencite{stadiums}, the previous process was done iteratively for a total of 126 football matches during the year at 15 unique stadiums.
+Taking the Premier League fixtures of 2019 \parencite{fixtures}, along with the coordinates of every Premier League club stadium \parencite{stadiums}, the previous process was done iteratively for a total of 126 football matches during the year at 15 unique stadiums.
 
 \begin{figure}[h]
 \centering     %%% not \center
 \includegraphics[width=0.70\textwidth]{stadiums}
-\caption{Premiere League footaball stadiums analysed.}
+\caption{Premier League football stadiums analysed.}
 \end{figure}
 
 When summarised for every match, the z-score appears to be slightly below the average number of accidents. Although there is a significant difference in the number of accidents for different stadiums, on average the analysis implies that there is not a statistically significant rise in the number of accidents on the day of a football match compared to the typical same day of the week in the region.
 
-The table above (figure \ref{football}) shows the summary statistics for premier league football matches. The \textit{Accidents 1} column shows the average number of accidents in the area of the stadium on days when there is a match, and the \textit{Accidents 2} column shows the average number of accidents on the same day of the week when there is not a match being played.
+The table above (figure \ref{football}) shows the summary statistics for Premier League football matches. The \textit{Accidents 1} column shows the average number of accidents in the area of the stadium on days when there is a match, and the \textit{Accidents 2} column shows the average number of accidents on the same day of the week when there is not a match being played.
 
 
 \begin{figure}
@@ -195,7 +202,7 @@ The table above (figure \ref{football}) shows the summary statistics for premier
         Vicarage Road & 0.8 & 2.0 & -0.23 \\ \hline
         Wembley & 9.2 & 12.7 & -0.86 \\ \hline
     \end{tabular}
-    \caption{Summary statistics for accidents surrounding Premiere League football stadiums.}
+    \caption{Summary statistics for accidents surrounding Premier League football stadiums.}
     \label{football}
 \end{figure}
 
@@ -204,26 +211,35 @@ The table above (figure \ref{football}) shows the summary statistics for premier
 
 % introduction
 
-A statistical model was developed in order to predict the conditions under which accidents are most likely to occur in, as well as severity of injuries sustained.
-The purpose of developing such a model is to be able to predict when an accident will occur, in order to aid in providing recommendations.
+A statistical model was developed to predict the conditions under which accidents are most likely to occur in, as well as the severity of injuries sustained.
+The purpose of developing such a model is to be able to predict when an accident will occur, to aid in providing recommendations.
 
 % assumptions
 
-The author assumes that the subset of all data samples that does not contain a single unknown value in the initial predictors of interest is sufficient for training the model. After doing so there was 98,654 samples, 33.38\% of the original merged data sets. A second assumption made was that the nominal, ordinal and binary categorical predictors could all be treated equivalently during the feature selection process.
+The author assumes that the subset of all data samples that do not contain a single unknown value in the initial predictors of interest is sufficient for training the model. After doing so there were 98,654 samples, 33.38\% of the original merged data sets. A second assumption made was that the nominal, ordinal and binary categorical predictors could all be treated equivalently during the feature selection process.
 
 % feature selection
 
-In order to choose the most suitable features on which to train the model, all the features that seemed to be of value were joined into a single data set. Categorical features were evaluated according to an ANOVA hypothesis test \parencite{anova}.
+To choose the most suitable features on which to train the model, all the features that seemed to be of value were joined into a single data set. Categorical features were evaluated according to an ANOVA hypothesis test \parencite{anova}.
+
+\begin{figure}[h]
+\centering     %%% not \center
+\includegraphics[width=0.80\textwidth]{feature_plot}
+\caption{Feature selection using ANOVA.}
+\label{feature-selection}
+\end{figure}
+
+Consequently, twelve features were selected for the model training based on these methods. The scores can be visualised in figure \ref{feature-selection}.
 
 % sampling methods
 
-The data was heavily imbalanced on accident severity, on the order of 50:10:1 for slight, serious and fatal injuries respectively. In order to accommodate for this imbalance, an auxiliary data set was produced by oversampling the minority class by using the SMOTE augmentation technique CITE. This provided a balanced set on which the model could be trained.
+The data was heavily imbalanced on accident severity, on the order of 50:10:1 for slight, serious and fatal injuries respectively. In order to accommodate for this imbalance, an auxiliary data set was produced by oversampling the minority class by using the Synthetic Minority Oversampling (SMOTE) technique \parencite{smote}. This provided a balanced set on which the model could be trained.
 
 % models tested
 
 A host of classification models were evaluated by cross-validation on a repeated stratified k-fold of the samples.
 
-Decision tree based models were the by far the most accurate models employed, with the greatest accuracy coming from a random forest model.
+Decision tree-based models were by far the most accurate models employed, with the greatest accuracy coming from a random forest model.
 
 \begin{figure}[h]
 \centering     %%% not \center
@@ -234,16 +250,25 @@ Decision tree based models were the by far the most accurate models employed, wi
 
 As can be seen in figure \ref{models}, a stacked model achieved 92.62\% accuracy during the cross-validation process. 
 
-However, it should be noted that when the model was later trained on the original dataset, that the accuracy regressed to 84.2\%.
+However, it should be noted that when the model was later trained on the original dataset, the accuracy regressed to 84.2\%.
 
+In addition to the STATS19 data sets, the Department for Transport provided model probabilities at the record-level for the accidents with the binary classes of being a serious or slight injury \parencite{model-report}.
+
+The government model was based on a binary logistic regression and trained on many of the same features employed in the training of the random forest model referenced in this report.
+
+To compare the models, a previously unseen validation set of approximately 22,000 samples were passed to the trained random forest model. Using the accident index as a foreign key, the probabilities for those same samples were extracted from the government model.
+
+A mean-squared error function was then employed to determine the distance between the predicted values of the random forest model and the government model.
+
+For both the serious and slight accident predictions, the mean-squared error result was under 15\%, giving a significant level of confidence in the predictive capabilities of the random forest model developed.
 \section{Predictions}
 
 The author makes the following recommendations based on the analysis delivered.
 \begin{itemize}
-\item To increase awareness about the dangers of traffic accidents for bicyclers, targeting both the cyclist and the driver.
-\item To increase awareness of the dangers of high speed motorcycle use in rural areas, along the lines of **think bikee**. 
+\item To increase awareness of the dangers of traffic accidents for cyclists, targeting both the cyclist and the driver.
+\item To increase awareness of the dangers of high-speed motorcycle use in rural areas. 
 \item To consider better lighting conditions during the early hours of the morning and late at night depending on the time of year.
-\item To further investigate the reasons why there is a relative increase in accidents involving taxis during the early hours of the morning. This could suggest that overworking and tiredness is playing a key role.
+\item To further investigate the reasons why there is a relative increase in accidents involving taxis during the early hours of the morning. This could suggest that overworking and tiredness are playing a key role.
 \end{itemize}
 
 \printbibliography

@@ -17,92 +17,36 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{accidents2019}{misc}{}
+  \entry{data2019}{misc}{}
     \name{author}{1}{}{%
-      {{hash=fTD}{%
-         prefix={for},
-         prefixi={f\bibinitperiod},
-         family={Transport},
-         familyi={T\bibinitperiod},
-         given={Department},
-         giveni={D\bibinitperiod},
+      {{hash=D}{%
+         family={{Department for Transport}},
+         familyi={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{TDf1}
-    \strng{fullhash}{TDf1}
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2021}
-    \field{extradate}{2}
+    \field{labelyear}{2022}
     \field{labeldatesource}{}
-  \field{note}{\url{https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-accident-2019.csv}}
-    \field{title}{Road Safety Data - Accidents 2019}
-    \field{year}{2021}
-  \endentry
-
-  \entry{vehicles2019}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=fTD}{%
-         prefix={for},
-         prefixi={f\bibinitperiod},
-         family={Transport},
-         familyi={T\bibinitperiod},
-         given={Department},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TDf1}
-    \strng{fullhash}{TDf1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2021}
-    \field{extradate}{4}
-    \field{labeldatesource}{}
-  \field{note}{\url{https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-vehicle-2019.csv}}
-    \field{title}{Road Safety Data - Vehicles 2019}
-    \field{year}{2021}
-  \endentry
-
-  \entry{casualties2019}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=fTD}{%
-         prefix={for},
-         prefixi={f\bibinitperiod},
-         family={Transport},
-         familyi={T\bibinitperiod},
-         given={Department},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TDf1}
-    \strng{fullhash}{TDf1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2021}
-    \field{extradate}{3}
-    \field{labeldatesource}{}
-  \field{note}{\url{https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-casualty-2019.csv}}
-    \field{title}{Road Safety Data - Casualties 2019}
-    \field{year}{2021}
+  \field{note}{\url{https://data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data/}}
+    \field{title}{Road Safety Data}
+    \field{year}{2022}
   \endentry
 
   \entry{stats2019}{misc}{}
     \name{author}{1}{}{%
-      {{hash=fTD}{%
-         prefix={for},
-         prefixi={f\bibinitperiod},
-         family={Transport},
-         familyi={T\bibinitperiod},
-         given={Department},
-         giveni={D\bibinitperiod},
+      {{hash=D}{%
+         family={{Department for Transport}},
+         familyi={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{TDf1}
-    \strng{fullhash}{TDf1}
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2021}
-    \field{extradate}{1}
     \field{labeldatesource}{}
     \field{title}{Road accident and safety statistics: quality and methodology}
     \verb{url}
@@ -139,13 +83,13 @@
 
   \entry{cities}{misc}{}
     \name{author}{1}{}{%
-      {{hash=s}{%
-         family={{simple maps}},
-         familyi={s\bibinitperiod},
+      {{hash=S}{%
+         family={{Simple Maps}},
+         familyi={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{s1}
-    \strng{fullhash}{s1}
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2021}
@@ -158,19 +102,12 @@
   \endentry
 
   \entry{sunrise_sunset}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=s}{%
-         family={{sunrise and sunset}},
-         familyi={s\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{s2}
-    \strng{fullhash}{s2}
-    \field{labelnamesource}{author}
+    \field{shorthand}{Sunrise, 2021}
+    \field{label}{Sunrise, 2021}
     \field{labeltitlesource}{title}
     \field{labelyear}{2021}
     \field{labeldatesource}{}
-    \field{title}{Sunrise and sunset London 2019}
+    \field{title}{Sunrise and Sunset London 2019}
     \verb{url}
     \verb https://www.sunrise-and-sunset.com/en/sun/united-kingdom/london/2019/
     \verb \
@@ -178,16 +115,31 @@
     \field{year}{2021}
   \endentry
 
-  \entry{fixtures}{misc}{}
+  \entry{motorcycle}{article}{}
     \name{author}{1}{}{%
-      {{hash=f}{%
-         family={{fixturedownload.com}},
-         familyi={f\bibinitperiod},
+      {{hash=D}{%
+         family={{Department for Transport}},
+         familyi={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{f1}
-    \strng{fullhash}{f1}
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
     \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{title}{Motorcycle use in England}
+    \verb{url}
+    \verb https://assets.publishing.service.gov.uk/government/uploads/system/up
+    \verb loads/attachment_data/file/694965/motorcycle-use-in-england.pdf
+    \endverb
+    \field{journaltitle}{National Travel Survey}
+    \field{year}{2016}
+  \endentry
+
+  \entry{fixtures}{misc}{}
+    \field{shorthand}{Fixture, 2021}
+    \field{label}{Fixture, 2021}
     \field{labeltitlesource}{title}
     \field{labelyear}{2022}
     \field{labeldatesource}{}
@@ -200,13 +152,15 @@
 
   \entry{stadiums}{misc}{}
     \name{author}{1}{}{%
-      {{hash=d}{%
-         family={{doogal}},
-         familyi={d\bibinitperiod},
+      {{hash=D}{%
+         family={Doogal},
+         familyi={D\bibinitperiod},
+         given={2022},
+         giveni={\bibinitperiod},
       }}%
     }
-    \strng{namehash}{d1}
-    \strng{fullhash}{d1}
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2022}
@@ -252,6 +206,73 @@
     \field{volume}{6}
     \field{journaltitle}{Chemometrics and Intelligent Laboratory Systems}
     \field{year}{1989}
+  \endentry
+
+  \entry{smote}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CNV}{%
+         family={Chawla},
+         familyi={C\bibinitperiod},
+         given={Nitesh\bibnamedelima V},
+         giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=BKW}{%
+         family={Bowyer},
+         familyi={B\bibinitperiod},
+         given={Kevin\bibnamedelima W},
+         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=HLO}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Lawrence\bibnamedelima O},
+         giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=KWP}{%
+         family={Kegelmeyer},
+         familyi={K\bibinitperiod},
+         given={W\bibnamedelima Philip},
+         giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CNV+1}
+    \strng{fullhash}{CNVBKWHLOKWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{pages}{321\bibrangedash 357}
+    \field{title}{SMOTE: synthetic minority over-sampling technique}
+    \field{volume}{16}
+    \field{journaltitle}{Journal of artificial intelligence research}
+    \field{year}{2002}
+  \endentry
+
+  \entry{model-report}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=fTD}{%
+         prefix={for},
+         prefixi={f\bibinitperiod},
+         family={Transport},
+         familyi={T\bibinitperiod},
+         given={Department},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TDf1}
+    \strng{fullhash}{TDf1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{title}{stimating and adjusting for changes in the method of severity
+  reporting for road accidents and casualty data: final report}
+    \verb{url}
+    \verb https://assets.publishing.service.gov.uk/government/uploads/system/up
+    \verb loads/attachment_data/file/820588/severity-reporting-methodology-fina
+    \verb l-report.odt
+    \endverb
+    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput

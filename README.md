@@ -9,8 +9,9 @@ The following report is an analysis of traffic accidents in the United Kingdom d
 
 ## Table of Contents
 
-1. [Data Sources]()
+1. [Data Sources](https://github.com/jakegodsall/road-traffic-accidents-2019#data-sources)
 2. [Data Cleaning](https://github.com/jakegodsall/road-traffic-accidents-2019#data-cleaning)
+3. [Report](https://github.com/jakegodsall/road-traffic-accidents-2019#report)
 
 ### Data Sources
 
@@ -29,6 +30,8 @@ Doogal (2022). UK Football Stadiums. [https://www.doogal.co.uk/FootballStadiums.
 Twenty-eight samples from the Road Safety Data was missing its coordinate data. However, the samples did have associated local district information. By use of Beautiful Soup REF, the coordinate data for all towns and cities in the UK were mined from REF and imputed where necessary.
 
 To impute missing time values, the sunrise and sunset times for London during the year 2019 were scraped from REF. According to the light_conditions feature of the sample (darkness/light), the median time between sunrise and sunset or between sunset and sunrise was imputed.
+
+## Report
 
 ### Exploratory Data Analysis
 

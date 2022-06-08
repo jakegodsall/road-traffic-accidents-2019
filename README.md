@@ -39,6 +39,7 @@ To impute missing time values, the sunrise and sunset times for London during th
 Clustering analysis based around eight cluster centres shows that the vast majority of accidents occur in densley populated areas, as should be expected.
 
 ![alt text](plots/accident_clusters.png)
+<img src="plots/accident_clusters.png" alt="drawing" width="200"/>
 
 
 Considering the temporal dimension of the data, it was determined that there exist two primary peaks in accident frequency within the ranges 8:00 am to 10:00 am, and then again from 3:00 pm to 7:00 pm

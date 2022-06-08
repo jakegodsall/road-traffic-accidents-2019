@@ -1,5 +1,7 @@
 # Road Traffic Accidents 2019
 
+This repository was submitted as an assignment for the Big Data and Data Mining module of the MSc in Artificial Intelligence and Data Science from the University of Hull, 2022.
+
 ## Introduction
 
 The following report is an analysis of traffic accidents in the United Kingdom during 2019, based on the freely available data published by the Department for Transport ADD REF.
@@ -7,7 +9,10 @@ The following report is an analysis of traffic accidents in the United Kingdom d
 
 ## Table of Contents
 
-### Data Sources
+1. [Data Sources]()
+2. [Data Cleaning](https://github.com/jakegodsall/road-traffic-accidents-2019#data-cleaning)
+
+### Data Sources
 
 Department for Transport (2022). Road Safety Data. [https://data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data/.]
 

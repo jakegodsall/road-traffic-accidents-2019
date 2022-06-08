@@ -4,7 +4,7 @@ This repository was submitted as an assignment for the Big Data and Data Mining 
 
 ## Introduction
 
-The following report is an analysis of traffic accidents in the United Kingdom during 2019, based on the freely available data published by the Department for Transport ADD REF.
+The following report is an analysis of traffic accidents in the United Kingdom during 2019, based on the freely available data published by the Department for Transport.
 
 
 ## Table of Contents

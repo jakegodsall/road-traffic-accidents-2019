@@ -76,3 +76,40 @@ When summarised for every match, the z-score appears to be slightly below the av
 The table above (figure 9) shows the summary statistics for Premier League football matches. The Accidents 1 column shows the average number of accidents in the area of the stadium on days when there is a match, and the Accidents 2 column shows the average number of accidents on the same day of the week when there is not a match being played.
 
 ### Predictive Model
+
+A statistical model was developed to predict the conditions under which acci- dents are most likely to occur in, as well as the severity of injuries sustained.
+
+The purpose of developing such a model is to be able to predict when an accident will occur, to aid in providing recommendations.
+
+The author assumes that the subset of all data samples that do not con- tain a single unknown value in the initial predictors of interest is sufficient for training the model. After doing so there were 98,654 samples, 33.38% of the original merged data sets. A second assumption made was that the nominal, ordinal and binary categorical predictors could all be treated equivalently during the feature selection process.
+
+To choose the most suitable features on which to train the model, all the features that seemed to be of value were joined into a single data set. Categorical features were evaluated according to an ANOVA hypothesis test (Sthle and Wold, 1989).
+
+FIGURE 10
+
+on these methods. The scores can be visualised in figure 10.
+The data was heavily imbalanced on accident severity, on the order of 50:10:1 for slight, serious and fatal injuries respectively. In order to accommo- date for this imbalance, an auxiliary data set was produced by oversampling the minority class by using the Synthetic Minority Oversampling (SMOTE) technique (Chawla et al., 2002). This provided a balanced set on which the
+model could be trained.
+A host of classification models were evaluated by cross-validation on a
+repeated stratified k-fold of the samples.
+Decision tree-based models were by far the most accurate models em-
+ployed, with the greatest accuracy coming from a random forest model.
+
+FIGURE 11
+
+
+As can be seen in figure 11, a stacked model achieved 92.62% accuracy during the cross-validation process.
+However, it should be noted that when the model was later trained on the original dataset, the accuracy regressed to 84.2%.
+In addition to the STATS19 data sets, the Department for Transport provided model probabilities at the record-level for the accidents with the binary classes of being a serious or slight injury (Transport, 2019).
+The government model was based on a binary logistic regression and trained on many of the same features employed in the training of the random forest model referenced in this report.
+To compare the models, a previously unseen validation set of approx- imately 22,000 samples were passed to the trained random forest model. Using the accident index as a foreign key, the probabilities for those same samples were extracted from the government model.
+A mean-squared error function was then employed to determine the dis- tance between the predicted values of the random forest model and the gov- ernment model.
+For both the serious and slight accident predictions, the mean-squared error result was under 15%, giving a significant level of confidence in the predictive capabilities of the random forest model developed.
+
+### Predictions
+
+The author makes the following recommendations based on the analysis delivered.
+• To increase awareness of the dangers of traffic accidents for cyclists, targeting both the cyclist and the driver.
+• To increase awareness of the dangers of high-speed motorcycle use in rural areas.
+• To consider better lighting conditions during the early hours of the morning and late at night depending on the time of year.
+• To further investigate the reasons why there is a relative increase in accidents involving taxis during the early hours of the morning. This could suggest that overworking and tiredness are playing a key role.
